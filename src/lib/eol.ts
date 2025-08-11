@@ -2,7 +2,8 @@ import fs from 'fs/promises'
 import path from 'path'
 
 // Cache for public EOL feeds
-let publicEolFeeds: Record<string, any[]> = {}
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const publicEolFeeds: Record<string, any[]> = {}
 let internalEolMap: Record<string, Record<string, string>> = {}
 let lastCacheTime = 0
 const CACHE_DURATION = 24 * 60 * 60 * 1000 // 24 hours in milliseconds

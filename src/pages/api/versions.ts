@@ -38,7 +38,8 @@ interface EolEntry {
 }
 
 // Cache for public EOL feeds and internal data
-let publicEolFeeds: Record<string, any[]> = {}
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const publicEolFeeds: Record<string, any[]> = {}
 let internalEolMap: Record<string, Record<string, string>> = {}
 let eolDataLoaded = false
 let lastFetchTime = 0

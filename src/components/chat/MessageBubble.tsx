@@ -67,7 +67,7 @@ export function MessageBubble({ message }: MessageBubbleProps) {
   });
 
   const components: Partial<Components> = {
-    code: ({ className, children, ...props }: any) => {
+    code: ({ className, children, ...props }) => {
       const content = String(children).replace(/\n$/, '');
       
       if (!className) {

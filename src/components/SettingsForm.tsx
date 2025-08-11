@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 interface SettingsFormProps {
-  onSave?: (settings: Record<string, any>) => void;
+  onSave?: (settings: Record<string, unknown>) => void;
 }
 
 export default function SettingsForm({ onSave }: SettingsFormProps) {

@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect, KeyboardEvent } from 'react';
 import {
-  MinusIcon,
   TrashIcon,
   Cog6ToothIcon,
   PaperAirplaneIcon,

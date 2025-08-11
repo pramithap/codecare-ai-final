@@ -113,9 +113,13 @@ export class Cache<T> {
 }
 
 // Global cache instances for different types of data
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const packageInfoCache = new Cache<any>(10 * 60 * 1000); // 10 minutes
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const compatibilityCache = new Cache<any>(30 * 60 * 1000); // 30 minutes
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const vulnerabilityCache = new Cache<any>(5 * 60 * 1000); // 5 minutes
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const planCache = new Cache<any>(15 * 60 * 1000); // 15 minutes
 
 /**

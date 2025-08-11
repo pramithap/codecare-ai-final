@@ -175,8 +175,8 @@ export function useChat(options: UseChatOptions = {}) {
       setMessages(finalMessages);
       saveMessages(finalMessages);
 
-    } catch (error: any) {
-      if (error.name === 'AbortError') {
+    } catch (error: unknown) {
+      if (error instanceof Error && error.name === 'AbortError') {
         // Request was cancelled, don't show error
         return;
       }
@@ -184,12 +184,14 @@ export function useChat(options: UseChatOptions = {}) {
       console.error('Chat API error:', error);
       let errorMessage = 'Failed to get response from AI assistant';
       
-      if (error.message.includes('429')) {
-        errorMessage = 'Rate limit exceeded. Please try again in a moment.';
-      } else if (error.message.includes('Network')) {
-        errorMessage = 'Network error. Please check your connection.';
-      } else if (error.message) {
-        errorMessage = error.message;
+      if (error instanceof Error) {
+        if (error.message.includes('429')) {
+          errorMessage = 'Rate limit exceeded. Please try again in a moment.';
+        } else if (error.message.includes('Network')) {
+          errorMessage = 'Network error. Please check your connection.';
+        } else {
+          errorMessage = error.message;
+        }
       }
       
       setError(errorMessage);

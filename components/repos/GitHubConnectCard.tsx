@@ -51,7 +51,7 @@ export function GitHubConnectCard({ onValidated, className }: GitHubConnectCardP
       if (result.valid && onValidated) {
         onValidated();
       }
-    } catch (error) {
+    } catch {
       setValidationResult({
         valid: false,
         error: 'Network error. Please try again.',

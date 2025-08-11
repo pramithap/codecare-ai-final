@@ -247,7 +247,7 @@ export function ReposTable({ className, onRepoDeleted }: ReposTableProps) {
             No repositories found
           </h4>
           <p className="text-slate-300 mb-8 max-w-md mx-auto text-lg leading-relaxed">
-            No repositories match your search for "{searchTerm}". Try adjusting your search terms.
+            No repositories match your search for &quot;{searchTerm}&quot;. Try adjusting your search terms.
           </p>
           <button
             onClick={() => setSearchTerm('')}

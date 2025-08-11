@@ -13,7 +13,7 @@ export function ChatWidget() {
     if (project && project !== 'unknown') {
       chat.initializeChat();
     }
-  }, [project, chat.initializeChat]);
+  }, [project, chat.initializeChat, chat]);
 
   return (
     <>

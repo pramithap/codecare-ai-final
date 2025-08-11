@@ -7,7 +7,7 @@ const Navbar = () => {
   const router = useRouter();
   const { data: session, status } = useSession();
   const loading = status === "loading";
-  const orgSlug = (session as any)?.orgSlug;
+  const orgSlug = (session as { orgSlug?: string })?.orgSlug;
   
   const [menuOpen, setMenuOpen] = useState(false);
 

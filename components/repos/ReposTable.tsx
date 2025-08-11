@@ -5,8 +5,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { 
   TrashIcon, 
   ArrowPathIcon,
-  ExclamationTriangleIcon,
-  CheckCircleIcon
+  ExclamationTriangleIcon
 } from '@heroicons/react/24/outline';
 import { cx } from '../../lib/classnames';
 import type { Repository, UpdateRepoRequest } from '../../types/repos';

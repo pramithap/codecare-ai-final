@@ -57,7 +57,7 @@ export default async function handler(
 
     // For now, return a mock response
     // In a real implementation, this would call an LLM API (OpenAI, Claude, etc.)
-    let reply = generateMockResponse(message, context, project);
+    const reply = generateMockResponse(message, context, project);
 
     res.status(200).json({ reply });
 

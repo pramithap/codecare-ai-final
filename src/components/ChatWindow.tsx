@@ -43,7 +43,7 @@ export default function ChatWindow({
         {messages.length === 0 ? (
           <div className="text-center text-gray-500 py-8">
             <p>Start a conversation with the AI assistant</p>
-            <p className="text-sm mt-2">Try asking: "What are the risks of upgrading React?"</p>
+            <p className="text-sm mt-2">Try asking: &quot;What are the risks of upgrading React?&quot;</p>
           </div>
         ) : (
           messages.map((message) => (
