@@ -1,0 +1,27 @@
+[
+  {
+    "name": "react",
+    "currentVersion": "16.8.0",
+    "type": "npm"
+  },
+  {
+    "name": "lodash",
+    "currentVersion": "4.17.15",
+    "type": "npm"
+  },
+  {
+    "name": "spring-boot",
+    "currentVersion": "2.5.0",
+    "type": "maven"
+  },
+  {
+    "name": "express",
+    "currentVersion": "4.16.0",
+    "type": "npm"
+  },
+  {
+    "name": "Ant",
+    "currentVersion": "1.10.0",
+    "type": "ant"
+  }
+]

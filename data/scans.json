@@ -1,0 +1,99 @@
+[
+  {
+    "id": "sample001",
+    "repoName": "my-react-app",
+    "repoUrl": "https://github.com/user/my-react-app",
+    "branch": "main",
+    "commit": "abc123def456",
+    "scannedAt": "2024-12-19T10:30:00.000Z",
+    "libsTotal": 45,
+    "libsOutdated": 12,
+    "vulns": { "low": 3, "med": 2, "high": 1 },
+    "eol": { "overdue": 1, "soon": 2 },
+    "compat": { "avg": 85, "min": 65 },
+    "planReady": true,
+    "tags": ["react", "javascript", "frontend"],
+    "sampleLibs": [
+      {
+        "name": "react",
+        "current": "17.0.2",
+        "latest": "18.2.0",
+        "severity": "Med",
+        "eol": null
+      },
+      {
+        "name": "lodash",
+        "current": "4.17.15",
+        "latest": "4.17.21",
+        "severity": "High",
+        "eol": null
+      },
+      {
+        "name": "axios",
+        "current": "0.24.0",
+        "latest": "1.6.2",
+        "severity": "Low",
+        "eol": null
+      }
+    ]
+  },
+  {
+    "id": "sample002",
+    "repoName": "api-service",
+    "repoUrl": "https://github.com/user/api-service",
+    "branch": "develop",
+    "scannedAt": "2024-12-19T09:15:00.000Z",
+    "libsTotal": 28,
+    "libsOutdated": 8,
+    "vulns": { "low": 1, "med": 0, "high": 0 },
+    "eol": { "overdue": 0, "soon": 1 },
+    "compat": { "avg": 92, "min": 78 },
+    "planReady": true,
+    "tags": ["node", "express", "backend"],
+    "sampleLibs": [
+      {
+        "name": "express",
+        "current": "4.18.2",
+        "latest": "4.18.2",
+        "eol": null
+      },
+      {
+        "name": "mongoose",
+        "current": "6.8.0",
+        "latest": "8.0.3",
+        "severity": "Low",
+        "eol": null
+      }
+    ]
+  },
+  {
+    "id": "sample003",
+    "repoName": "legacy-webapp",
+    "repoUrl": "https://github.com/user/legacy-webapp",
+    "branch": "main",
+    "scannedAt": "2024-12-18T16:45:00.000Z",
+    "libsTotal": 67,
+    "libsOutdated": 35,
+    "vulns": { "low": 8, "med": 5, "high": 3 },
+    "eol": { "overdue": 4, "soon": 6 },
+    "compat": { "avg": 42, "min": 15 },
+    "planReady": false,
+    "tags": ["legacy", "jquery", "php"],
+    "sampleLibs": [
+      {
+        "name": "jquery",
+        "current": "1.12.4",
+        "latest": "3.7.1",
+        "severity": "High",
+        "eol": "2023-05-11"
+      },
+      {
+        "name": "bootstrap",
+        "current": "3.4.1",
+        "latest": "5.3.2",
+        "severity": "Med",
+        "eol": null
+      }
+    ]
+  }
+]
