@@ -45,22 +45,6 @@ export default withAuth(
     },
   }
 );
-  
-  // If the route is not public and the user is not authenticated, redirect to sign-in
-  if (!isPublicRoute(req) && !authData.userId) {
-    return authData.redirectToSignIn();
-  }
-
-  // Redirect authenticated users away from auth pages to dashboard
-  if (authData.userId && (req.nextUrl.pathname === '/sign-in' || req.nextUrl.pathname === '/sign-up')) {
-    return NextResponse.redirect(new URL('/dashboard', req.url));
-  }
-
-  // Redirect root path to dashboard if signed in
-  if (authData.userId && req.nextUrl.pathname === '/') {
-    return NextResponse.redirect(new URL('/dashboard', req.url));
-  }
-});
 
 export const config = {
   matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
