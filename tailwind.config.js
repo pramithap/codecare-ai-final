@@ -12,6 +12,10 @@ module.exports = {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
       },
+      fontFamily: {
+        sans: ['system-ui', 'sans-serif'],
+        mono: ['ui-monospace', 'monospace'],
+      },
     },
   },
   plugins: [],

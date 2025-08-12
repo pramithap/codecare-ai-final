@@ -1,15 +1,10 @@
-@import "tailwindcss";
-
-@theme {
-  --color-background: #ffffff;
-  --color-foreground: #171717;
-  --font-family-sans: system-ui, sans-serif;
-  --font-family-mono: ui-monospace, monospace;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: var(--color-background);
-  --foreground: var(--color-foreground);
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
 /* Custom scrollbar for the repository list */
@@ -54,14 +49,9 @@ select:focus {
 }
 
 @media (prefers-color-scheme: dark) {
-  @theme {
-    --color-background: #0a0a0a;
-    --color-foreground: #ededed;
-  }
-  
   :root {
-    --background: var(--color-background);
-    --foreground: var(--color-foreground);
+    --background: #0a0a0a;
+    --foreground: #ededed;
   }
 }
 
